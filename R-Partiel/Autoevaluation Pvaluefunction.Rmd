@@ -1,0 +1,68 @@
+---
+title: "PvalueFunction"
+author: "Zakaria RIDADARAJAT"
+date: "02/02/2021"
+output:
+  pdf_document: default
+  html_document: default
+encoding: UTF-8
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Synthese :  
+
+ Voici le lien du Github: **https://github.com/ZakariaRida96/PSBX/blob/main/pvalue%20functions.pdf**
+
+La p-valeur est métrique statistique qui permet de trancher selon un seuil donné la significativité statistique d'un résultat base sur une hypothèse dite hypothèse nulle. L'idée générale est de déterminer soit le rejet ou le non-rejet d’une hypothèse donnée. 
+
+Sur le document qu'on avait produit, avons essayer de montrer l’évolution la p-value au sein de la communauté scientifique, tout en mentionnant les critiques de chaque courant(Fisher,Peaeson,Bayes) et l’utilité de cette métrique lors des inférences statistiques. 
+
+ Sur ce nous essaye d’expliciter l’utilité de la p-value à travers la package pvaluefunctions. Ce package permet de créer de la fonction de la p-value, des distributions de confiance et des densités de confiance. 
+
+Pour cela, nous avons choisi le jeu de donnée Iris où nous vérifions quelque test classique (test de comparaison de moyenne, test de régression, test de corrélation). 
+
+## Evaluation  
+
+  
+  <br> 1) lisibilité du rapport :   
+
+  
+
+Je pense que le rapport que nous avons fourni est bien lisible. 
+
+  
+
+  <br> 2) qualité du rapport :  
+
+Le document est très agréable à lire, on a respecté les normes d’un rapport scientifique. 
+
+  
+
+<br> 3) Aspect didactique    
+
+  
+
+ Le document est bien compréhensible car on a pu expliquer parfaitement chaque partie en détail. 
+
+<br> 4) Bibliographie :   
+
+La bibliographie est mentionnée à la fin du document. 
+
+  
+
+<br> 1) Exécution du fichier rmd:  
+
+  
+
+Le fichier rmd s'exécute parfaitement sur la totalité du script. 
+
+  
+
+   
+
+## Conclusion :  
+
+Ce travail n’était pas compliqué à étudier. La documentation est facile à lire et à comprendre. Elle convient à tous les niveaux en statistique. Les fonctions de PvalueFunction sont simples à utiliser et peuvent être mises en pratique dès lors que nous utilisons un jeu de données. 

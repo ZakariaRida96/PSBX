@@ -1,0 +1,110 @@
+---
+title: "Cross Validation"
+author: "Zakaria RIDADARAJAT"
+date: "02/02/2021"
+output:
+  pdf_document: default
+  html_document: default
+encoding: UTF-8
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Entête :  
+
+  
+Nous allons explorer dans ce document la méthode Cross Validation faite par Rindra LUTZ et Marko ARSIC.  
+
+  
+
+Voici le lien vers leur GitHub est: **https://github.com/ARSICMrk/ARSIC_PSBx/tree/main/R_Travail_Sup** 
+
+  
+
+## Synthèse :  
+
+  
+
+Ce document est basé sur essentiellement sur la méthode de le cross validation.Cette méthode nous permet de mesurer la capacité de généralisation d’un modèle sans introduire de biais, ni fuites de données. Le plus commun consiste à diviser son dataset en données d'entrainement, de validation et de test.   
+
+Pour mieux comprendre cette méthode, nous allons se base sur l'exemple mentionné sur le rapport de Marko et Rindra.  
+
+## Extrait commenté :  
+
+  Tout d’abord, ils ont commencé par installer et charger le package tidyverse et caret qui est indispensable pour la construction du modèle prédictif, après ils sont fait appel à la table swiss.  
+
+
+```{r cars} 
+
+library(tidyverse) 
+
+library(caret) 
+
+data("swiss") 
+
+sample_n(swiss, 3) 
+
+``` 
+
+  
+
+Ils sont choisis un cross validation k-fold de 10, puis ils entrainent le modèle.  
+
+  
+```{r pressure, echo=FALSE} 
+
+set.seed(123) 
+
+train.control <- trainControl(method = "cv", number = 10) 
+
+model <- train(Fertility ~., data = swiss, method = "lm",trControl = train.control) 
+
+print(model) 
+
+``` 
+
+  
+
+## Evaluation :  
+
+  
+
+<br> 1) Exécution du fichier rmd:  
+
+
+Le fichier rmd s'exécute parfaitement sur la totalité du script.  
+
+  
+<br> 2) Qualité de rédaction :  
+
+
+Il est très agréable sur le plan visuel, ils bien respectes les règles de base d'un rapport.  
+
+  
+<br> 3) Aspect didactique   
+
+  
+Le document est parfaitement clair car ils ont bien détaillé toutes les étapes nécessaires pour appliquer la méthode du cross validation. Ils sont aussi montres l'importance de cette technique pour les projets data.  
+
+  
+<br> 4) Lisibilite du rmarkdown:  
+
+  
+Le code est bien organisé et expliqué et le rmarkdown est bien fait.  
+
+  
+<br> 5) Bibliographie :  
+
+
+Effectivement, les auteurs ont mentionné la bibliographie à la fin du rapport pour les gens qui veulent approfondir un peu plus sur le sujet.  
+
+  
+
+
+## Conclusion :  
+
+  
+
+En globale, le travail est bien fait et limpide. Rindra LUTZ et Marko ARSIC m'ont bien assisté indirectement à travers leur travail à connaitre les étapes essentielles de la méthode cross validation et son utilité. 

@@ -1,0 +1,140 @@
+---
+title: "Manipulation des strings sur R avec StringR"
+author: "Zakaria RIDADARAJAT"
+date: "02/02/2021"
+output:
+  pdf_document: default
+  word_document: default
+  html_document: default
+encoding: UTF-8
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Entête :  
+
+  
+
+Nous allons explorer dans ce document le package StringR faite par Léonard Boisson 
+
+  
+
+Voici le lien vers son GitHub est https://github.com/LeoBsn/PSB-PROJECT/blob/main/Manipuler%20des%20string%20avec%20R.pdf. 
+
+  
+
+## Synthèse : 
+
+  
+
+Ce document nous expose les fonctionnalités et les différentes éléments clés du package StringR, qui permet la manipulation des chaines de caractères sur R. 
+
+Les fonctionnalités du package StringR nous permet de faire de l'analyse textuelle et même du prepocessing sur les chaines de caractères.  
+
+  
+
+## Extrait commenté :   
+
+  
+
+  
+
+```{r cars, eval=FALSE, include=TRUE} 
+
+library(’stringr’) 
+
+  
+
+#Concaténer des chaînes de caractères avec str_c 
+
+str_c(d$title, d$director, sep = " - ") 
+
+  
+
+#Convertir en majuscule et minuscule 
+
+str_to_lower(d$cast) 
+
+  
+
+#str_to_upper : convertit en majuscule 
+
+  
+
+#str_to_title : capitalise les éléments d’un vecteur de chaînes de caractères 
+
+str_to_title(d$description) 
+
+  
+
+#Extraire des sous-chaînes par position avec str_sub 
+
+str_sub(d$type, 1, 4) 
+
+  
+
+  
+
+``` 
+
+  
+
+  
+
+Je trouve que le package est extrêmement intéressant car il permet de réaliser tous les prétraitements importants lors de l'exploration des données qualitatives.  
+
+  
+
+## Evaluation :  
+
+  
+
+<br> 1) Exécution du fichier rmd:  
+
+  
+
+La non-disponibilité du jeu de données.  
+
+  
+
+<br> 2) Qualité de rédaction :  
+
+  
+
+Pour moi il s'agit d'un excellent travail. L'auteur fournit un rapport bien structuré et facile à lire.  
+
+  
+
+<br> 3) Aspect didactique   
+
+  
+
+Le document est bien expliqué et accessible au tous les niveaux. Les descriptions sont relativement bien explicitées et bien illustrées. 
+
+  
+
+<br> 4) Lisibilité du rmarkdown:  
+
+  
+
+Le code est bien organisé et expliqué et le rmarkdown est bien fait.  
+
+  
+
+<br> 5) Bibliographie :  
+
+  
+
+En effet, la bibliographie est bien mentionnée. 
+
+  
+
+   
+
+## Conclusion :  
+
+  
+
+Selon moi, il s’agit d’un travail bien construit et recherché. Ce qui est regrettable, c'est le manque du jeu de donnée pour manipuler avec ce package. 

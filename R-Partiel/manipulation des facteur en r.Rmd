@@ -1,0 +1,159 @@
+---
+title: "Manipulation des facteurs"
+author: "Zakaria RIDADARAJAT"
+date: "02/02/2021"
+output:
+  pdf_document: default
+  word_document: default
+  html_document: default
+encoding: UTF-8
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+## Entête :  
+
+  
+
+Nous allons explorer dans ce document des techniques pour manipuler les facteurs. 
+
+l'auteur : Claire Mazzucato. 
+
+  
+
+  
+
+Voici le lien vers son github est **https://github.com/clairemazzucato/PSBX/blob/main/Manipulation%20des%20facteurs/Manipulation_des_facteurs_vf.pdf** 
+
+  
+
+  
+
+## Synthèse :  
+
+  
+
+L’intérêt derrière les facteurs c’est facilité la manipulation des données qualitative. L'idée est de créer un vecteur qui stocke les différents éléments et les différentes modalités possible dans un attribut.  
+
+  
+
+Un facteur est essentiellement utilisé pour stocker les valeurs observées d’une variable qualitative ou catégorique. Pour illustrer le fonctionnement des facteurs, l’auteure a créé un facteur avec des attributs par défaut, puis des niveaux personnalisés, et enfin des niveaux et des étiquettes personnalisés.  
+
+  
+
+## Extrait commenté :  
+
+Tout d’abord, il existe 3 fonctions pour créer les facteurs : 
+
+  
+
+```{r cars} 
+
+#La fonction factor 
+
+sexe <- factor(c("H", "H", "F", "H", "H", "F", "F", "F")) 
+
+sexe 
+
+``` 
+
+La fonction factor permet de créer un facteur en définissant directement les différents éléments du facteur. 
+
+  
+
+  
+
+  
+
+```{r pressure, echo=FALSE} 
+
+#La fonction as.factor 
+
+salto <- c(1:5,5:1) 
+
+salto.f <- as.factor(salto) 
+
+salto.f 
+
+``` 
+
+  
+
+```{r} 
+
+#La fonction ordered 
+
+niveau <- ordered(c("débutant","débutant","champion", 
+
+"champion","moyen","moyen","moyen", 
+
+"champion"), 
+
+levels=c("débutant","moyen","champion")) 
+
+niveau 
+
+``` 
+
+On fixe tout d’abord un facteur niveau avec les éléments suivants : débutant, débutant, champion, 
+
+champion, moyen, moyen, moyen, champion, et puis, on applique un ordre aux éléments du facteur, tel que : débutant < moyen <champion. 
+
+  
+
+## Evaluation :  
+
+  
+
+<br> 1) Exécution du fichier rmd:  
+
+  
+
+L’exécution du code se réalise parfaitement. 
+
+  
+
+<br> 2) Qualité de rédaction :  
+
+  
+
+Pour moi il s'agit d'un bon travail.de plus la rédaction est correcte. 
+
+  
+
+<br> 3) Aspect didactique   
+
+  
+
+Le document est parfaitement clair.je trouve que les descriptions des fonctions sont compréhensibles à tous les niveaux. 
+
+  
+
+<br> 4) Lisibilité du rmarkdown:  
+
+  
+
+Le code est bien organisé et expliqué et le rmarkdown est bien fait.  
+
+  
+
+<br> 5) Bibliographie :  
+
+  
+
+Non, il y'a pas de bibliographie.  
+
+  
+
+   
+
+## Conclusion :  
+
+  
+
+L'auteure a réalisé un document didactique qui permet de découvrir les différentes manipulations des données.  
+
+ 
+
+ 
