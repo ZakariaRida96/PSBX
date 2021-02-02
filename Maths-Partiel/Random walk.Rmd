@@ -1,0 +1,192 @@
+---
+title: "Random Walk"
+author: "Zakaria RIDADARAJAT"
+date: "02/02/2021"
+output:
+  pdf_document: default
+  word_document: default
+  html_document: default
+encoding: UTF-8
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Le travail que nous allons analyser dans ce dossier est celui de WILLIAM ROBACHE sur le thème des Marches Aléatoires.  
+
+  
+
+   
+
+  
+
+Le lien vers son GitHub:   
+
+  
+
+  **https://github.com/WilliamRbc/PSBX/tree/main/MARCHE%20ALEATOIRE **  
+
+  
+
+   
+
+  
+
+## Synthèse  
+
+  
+
+   
+
+  
+
+La marche aléatoire est un modèle mathématique qui permet de prédire le mouvement d'un système en fonction de son point de départ.   
+
+  
+
+L’auteur donnent tout d'abord une définition très simple de la marche aléatoire, il explique également son concept général avec de simples exemples.il a tenté de savoir si lors de l'étude des marches aléatoires, le système revient à son point de départ, c'est-à-dire s'il revient à son origine, cependant on comprend que la marche aléatoire peut être récurrente ou transiente. L’auteur, afin d'expliquer la marche aléatoire isotrope, il ajoute l'exemple d’une personne qui est sur un escalier et qui tire pile ou face pour décider si le prochain pas sera vers le haut ou vers le bas, le but étant de construire le test de Bernoulli avec issues équiprobables.  
+
+  
+
+L’auteur a produit 3 simulations de cette expérience et il a tracé à chaque simulation le graphe qui correspond.il revient sur exemple déjà cité dans l'introduction qui porte sur le fait que Google utilise la marché Aléatoire afin d'expliquer le Modèle de marche aléatoire et l'indice PageRank.  
+
+  
+
+Dans cette partie l’auteur a tenté d'expliquer le principe de PageRank, pour cela ils font un rappel bases mathématiques sur les chaînes de Markov et le théorème d'une chaine dite ergodique.  
+
+  
+
+## 4. Explication des formules  
+
+  
+
+Ce qui faut retenir des formules utilisées par les auteurs pour expliquer la marche aléatoire :   
+
+  
+
+   
+
+  
+
+On appelle marche aléatoire associée à la suite de variables aléatoires $(S_n)_{n\geq 1}$ où $S_n$ est défini par $$ S_n=X_1+\dots+X_n. $$  
+
+  
+
+Sachant que $(X_i)$ une suite de variable aléatoires indépendantes à valeurs dans $\{(\pm e_1,\dots,\pm e_d)\}$  
+
+  
+
+   
+
+  
+
+Cette première formule nous définit d'une manière très simplifié la marche aléatoire.  
+
+L'auteur nous rappelle les chaînes de Markov puis indiquent la différence entre une distribution stationnaire et ergodique et tout ça dans le cadre du Modelé de marche aléatoire et PageRank  
+
+  
+
+   
+
+  
+
+La distribution $Px$ est stationnaire si et seulement si $Px$ est un vecteur propre de $P^t$ de la valeur propre 1 :   
+
+  
+
+$$ Px = P^t * Px $$  
+
+  
+
+La distribution est ergodique si elle converge vers une même chaîne  
+
+  
+
+$$\forall P(X 0), \lim _{t \rightarrow+\infty} P(X t)=P\left(X_{\infty}\right)$$  
+
+  
+
+  
+
+  
+
+Pour mettre en place le PageRank, google utilise Les chaînes de Markov, cependant, cela ne suffit pas pour pouvoir définir la notoriété de la page à cause du problème de culs-de-sac autrement dit la chaîne n'est pas irréductible  
+
+  
+
+Solution : introduction d’une probabilité $\alpha$ de reset de la marche aléatoire  
+
+  
+
+   
+
+  
+
+$\boldsymbol{P}_{\text {pagerank }}=(1-\alpha) \cdot \boldsymbol{P}+\alpha \cdot \frac{1}{n} \cdot \boldsymbol{J} \text { avec } \forall i, \forall j, \boldsymbol{J}_{i j}=1$  
+
+  
+
+Typiquement $\alpha=10 \%$  
+
+  
+
+## evaluation  
+
+<br> 1) lisibilité du rapport :  
+
+  
+
+Le visuel est bon, mais le travail n’est pas vraiment organisé vu qu’on a du mal à comprendre l’enchainement des idées.  
+
+  
+
+<br> 2) qualité du rapport  
+
+  
+
+Présentation extrêmement bien faite, le latex est remarquable, bien structuré. Cependant on constate qu’il y a des erreurs dans le code latex vu qu’il a quelques formules qui ne sont pas claires notamment celles de la partie PageRank.  
+
+  
+
+  
+
+  
+
+<br> 2) Aspect didactique.  
+
+  
+
+Explication et compréhension des formules mathématique et des concepts fondamentaux sont clairs et bien succinct au début, mais à la fin, et ce n’est pas assez compréhensible.  
+
+  
+
+<br> 4) Bibliographie : 
+
+  
+
+Effectivement, les auteurs ont mentionné la bibliographie à la fin du rapport pour les gens qui veulent approfondir un peu plus sur le sujet.  
+
+  
+
+<br> 5) Qualité du LaTeX : 
+
+Globalement, les équations en latex sont maitrisées, à part la partie ou il y a les limites.  
+
+  
+
+  
+
+## 6. Conclusion  
+
+  
+
+   
+
+  
+
+À mon sens, je trouve que le sujet est très original et j’apprécie trop le choix de WILLIAM, cependant, il aurait dû exposer plus de détails pour une compréhension globale.  
+
+ 
+
+ 

@@ -1,0 +1,86 @@
+---
+title: "Tree-Based Optimization Tool"
+author: "Zakaria RIDADARAJAT"
+date: "02/02/2021"
+output:
+  pdf_document: default
+  word_document: default
+  html_document: default
+encoding: UTF-8
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+
+## Synthèse du documents:
+
+Github: **https://github.com/OlfaLmt/PSBX/blob/main/Th%C3%A8ses/Automating%20biomedical%20data%20science%20through%20tree-based%20pipeline%20optimization.pdf**
+
+
+
+Le document évalué dans le cadre de ce rendu a été fait par Olfa Lamti ou elle a pu aborder le sujet suivant :  Automating biomedical data science through treebased pipeline optimization.  
+
+  
+L'auteure présente dans ce rapport le concept d’optimisation des pipelines à base d’arbre qui permet d’automatiser le process d’un projet machine learning.et pour cela, l’auteure présente aussi l’outil TPOT(Tree-Based Optimization Tool) qui nous permet de construire des pipelines de machine learning dont la précision est élevée.  
+
+  
+Le Tree-Based Optimization Tool contient un algorithme spécifique (d’algorithme évolutif) qui permet de rechercher les meilleurs hyperparamètres dans le but de trouver le modèle le plus efficace.  
+
+  
+
+## Evaluation  
+
+   
+
+<br> 1) lisibilité du rapport :   
+
+  
+
+Le document est très agréable sur le plan visuel  
+
+  
+
+<br> 2) qualité du rapport :  
+
+  
+
+La rédaction du document est correcte et succincte.  
+
+  
+
+<br> 3) Aspect didactique : 
+
+  
+
+La lecture du document est très accessible. Elle ne nécessite pas un niveau avancé en programmation.  
+
+  
+
+<br> 4) Bibliographie :   
+
+  
+
+Effectivement, les auteurs ont mentionné la bibliographie à la fin du rapport pour les gens qui veulent approfondir un peu plus sur le sujet.  
+
+  
+
+<br> 5) Qualité du LaTeX    
+
+  
+
+Le document ne contient aucune équation mathématique liée à l’algorithme TPOT.  
+
+  
+
+  
+
+  
+
+## Conclusion :  
+
+  
+
+Personnellement, j’apprécie le document car il est bien documenté et compréhensible, néanmoins j’aurai aimé avoir plus de détails mathématiques sur l’algorithme TPOT. 

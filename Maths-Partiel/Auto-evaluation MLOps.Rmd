@@ -1,0 +1,36 @@
+---
+title: "MLOps"
+author: "Zakaria RIDADARAJAT"
+date: "02/02/2021"
+output:
+  pdf_document: default
+  word_document: default
+  html_document: default
+encoding: UTF-8
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Synthèse  
+
+Le document que j’ai fourni traite des techniques de mise en œuvre et d'automatisation de l'intégration continue (CI), de la livraison continue (CD) et de l'entraînement continu (CT) pour les systèmes de machine Learning (ML) connu par MLOps.  
+
+  
+
+Le MLOps est une pratique d'ingénierie ML qui vise à unifier le développement (Dev) et les opérations (Ops) des systèmes de ML. Ces pratiques permettent d’automatiser et de surveiller toutes les étapes de de la construction d'un système de ML, y compris l'intégration, les tests, la publication, le déploiement et la gestion de l'infrastructure.  
+
+  
+
+  
+
+  
+
+  
+
+Sur ce travail, j’ai présenté les pratiques du DevOps qui sont appliquer au MLOps , toute en détaillant les caractéristiques de chacune. Dans ce sens-là, j’ai montré les complications que les équipes de data scientist affrontent pour intègre ces pratiques dans les processus de production.  
+
+  
+
+J'ai également traite sur mon document les 3 niveaux du MLOps  et leurs spécificités sur un projet data et j’ai aussi exposer toutes les étapes de chaque niveau MLOps. 
